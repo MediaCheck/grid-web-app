@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "lib": [
+      "es6",
+      "dom",
+      "esnext"
+    ]
+  },
+  "include" : [
+
+  ],
+  "exclude": [
+    "node_modules",
+    "generator-tyrion"
+  ],
+  "files": [
+    "src"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
+  }
+}

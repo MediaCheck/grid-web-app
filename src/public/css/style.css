@@ -1,0 +1,522 @@
+html {
+    -webkit-text-size-adjust: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    min-width: 320px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+    background-color: #444;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-width: 320px;
+}
+
+#the-grid__root-screens-wrapper {
+    width: auto;
+    white-space: nowrap;
+    height: calc(100% - 32px);
+    width: 100%;
+    overflow-x: auto;
+    -webkit-scroll-snap-points-y: repeat(100%);
+    -ms-scroll-snap-points-y: repeat(100%);
+    scroll-snap-points-y: repeat(100%);
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -webkit-scroll-snap-destination: 100% 0%;
+    -ms-scroll-snap-destination: 100% 0%;
+    scroll-snap-destination: 100% 0%;
+}
+
+#views-holder {
+    min-height: 100%;
+}
+
+.the-grid__screens__screen {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    min-height: calc(100% - 32px);
+    vertical-align: top;
+    min-width: 320px;
+}
+
+.the-grid__screens__screen__main {
+    min-height: 100% !important;
+    min-height: calc(100% - 32px) !important;
+}
+
+
+/* common */
+a.programSelect__back {
+    display: block;
+    color: #000;
+    font-size: 24px;
+    line-height: 38px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 38px;
+    cursor: pointer;
+    cursor: hand;
+    opacity: 0.7;
+}
+
+a.programSelect__back:hover {
+    opacity: 1;
+}
+
+.programSelect__back i{
+    display: block;
+    line-height: 38px;
+    height: 38px;
+}
+
+.box-white {
+    width: 600px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #eee;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: 0;
+    box-shadow: black 0 0 15px;
+    transform: translateX(-50%) translateY(-50%);
+    height: 450px;
+}
+
+.box-white.login {
+    height: auto;
+    margin-top: -50px;
+}
+
+.box-white.login .social-login-wrap {
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.box-white.login .social-login-wrap label {
+    float: left;
+}
+
+.box-white.login .social-login-wrap ul {
+    float: right;
+}
+
+.box-white.login .social-login-wrap ul li {
+    list-style: none;
+    float: left;
+}
+
+.box-white.login .social-login-wrap a.icon {
+    margin-left: 10px;
+}
+
+.box-white.login .social-login-wrap a.icon i {
+    font-size: 32px;
+}
+
+.box-white.login .social-login-wrap a.icon i.fa-facebook-square {
+    color: #3a5798;
+}
+
+.box-white.login .social-login-wrap a.icon i.fa-github-square {
+    color: #1c74b6;
+}
+
+.box-white h1 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 32px;
+    position: relative;
+}
+
+.box-white.box-programs label, .box-white.box-programs h1 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+    position: relative;
+}
+
+.box-white.box-programs label.noPrograms {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -50px;
+    width: calc(100% - 40px);
+    display: block;
+    padding: 0 20px;
+}
+
+.box-white.box-programs label.noPrograms span{
+    display: block;
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.box-white label {
+    display: block;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.box-white input {
+    display: block;
+}
+
+.box-white .pagerWrapper {
+    width: 100%;
+    height: calc(100% - 122px);
+    position: relative;
+    overflow: hidden;
+}
+
+.box-white .pagerWrapper .pager {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: left 0.4s;
+    top: 0;
+    left: 0;
+}
+
+.box-white .pagerWrapper .pager.list1 {
+    left: 0;
+}
+
+.box-white .pagerWrapper .pager.list2 {
+    left: -100%;
+}
+
+.box-white .pagerWrapper .pager.list3 {
+    left: -200%;
+}
+
+.box-white .pagerWrapper .pager .list {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.box-white .pager .list:nth-child(1) {
+    left: 0;
+}
+
+.box-white .pager .list:nth-child(2) {
+    left: 100%;
+}
+
+.box-white .pager .list:nth-child(3) {
+    left: 200%;
+}
+
+.byzance-page-center {
+    position: fixed;
+    z-index: 10051;
+    width: 100px;
+    top: 40%;
+    left: 50%;
+    margin-left: -55px;
+    text-align: center;
+}
+@-webkit-keyframes byzance-logo-spinner-white-keyframes
+{
+    0%{-webkit-transform:rotate(0deg);}
+    25%{-webkit-transform:rotate(90deg);}
+    50%{-webkit-transform:rotate(180deg);}
+    75%{-webkit-transform:rotate(270deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes byzance-logo-spinner-white-keyframes
+{
+    0%{-moz-transform:rotate(0deg);}
+    25%{-moz-transform:rotate(90deg);}
+    50%{-moz-transform:rotate(180deg);}
+    75%{-moz-transform:rotate(270deg);}
+    100%{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes byzance-logo-spinner-white-keyframes
+{
+    0%{-ms-transform:rotate(0deg);}
+    25%{-ms-transform:rotate(90deg);}
+    50%{-ms-transform:rotate(180deg);}
+    75%{-ms-transform:rotate(270deg);}
+    100%{-ms-transform:rotate(360deg);}
+}
+.byzance-logo-spinner-white {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: inline-block;
+    background-image: url(logo_square_white.svg);
+    -webkit-animation-name: byzance-logo-spinner-white-keyframes;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: byzance-logo-spinner-white-keyframes;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-name: byzance-logo-spinner-white-keyframes;
+    -ms-animation-duration: 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease-in-out;
+}
+
+.box-white input[type=text], .box-white input[type=email], .box-white input[type=password] {
+    width: 100%;
+    border: 1px solid silver;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+.box-white input[type=text].required, .box-white input[type=email].required, .box-white input[type=password].required {
+    border: #e55b5b solid 1px;
+}
+
+.box-white input[type=submit] {
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin: 20px auto 0 auto;
+    background-color: #4db3a5;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    box-shadow: gray 0 0 3px;
+}
+
+.box-white .error {
+    margin: 10px 0;
+    border: #e55b5b solid 1px;
+    background-color: #ff6666;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.box-white hr {
+    border: none;
+    margin: 0;
+    border-top: #ddd 1px solid;
+}
+
+.box-white .program {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.box-white .program:hover {
+    background-color: #ddd;
+}
+
+.box-white .program .description {
+    display: block;
+    font-size: 0.6em;
+    font-weight: 400;
+    color: gray;
+}
+
+.box-white .loading {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.menu {
+    height: 32px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.menu .byzance-logo {
+    width: 80px;
+    height: 32px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(logo_white.svg);
+}
+
+.menu .menu-item {
+    display: inline-block;
+    float: right;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 32px;
+    padding: 0 5px;
+}
+
+.menu a.menu-item {
+    cursor: pointer;
+}
+
+.menu a.menu-item:hover {
+    background-color: #222;
+}
+
+.menu a.menu-item.disabled:hover {
+    background-color: transparent;
+    cursor: auto;
+}
+
+.grid {
+    filter: grayscale(0.8) blur(3px);
+    pointer-events: none;
+}
+
+.grid.active {
+    filter: initial;
+    pointer-events: initial;
+}
+
+
+
+
+
+.box-white h1.box-account {
+    display: block;
+    height: 32px;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.box-white h1.box-account .fa-user-circle {
+    font-size: 32px;
+    line-height: 32px;
+    float: left;
+}
+
+.box-white h1.box-account span {
+    line-height: 32px;
+    font-size: 18px;
+    float: left;
+    display: block;
+    width: calc(100% - 125px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box-white h1.box-account .logout-button {
+    font-size: 18px;
+    float: right;
+    margin: 5px 0 0 0;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.errorView {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.errorView .box {
+    width: 600px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #eee;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: 0;
+    box-shadow: black 0 0 15px;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.errorView .box p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.errorView .box p strong {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+.errorView .box i {
+    display: block;
+    font-size: 60px;
+    color: #f73838;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.errorView .box a.reload {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: #aaa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+@media only screen and (max-width: 660px) {
+    .box-white {
+        width: calc(100% - 60px);
+        height: calc(100% - 120px);
+        margin-top: 10px;
+        min-width: 320px;
+    }
+
+    .errorView .box {
+        width: calc(100% - 60px);
+        margin-top: 10px;
+        min-width: 320px;
+    }
+}

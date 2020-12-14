@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!--<html manifest="/cache.manifest" type="text/cache-manifest">-->
+<html>
+<head>
+    <title>Grid Web App | Byzance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-title" content="AppTitle">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="manifest" href="/manifest.json">
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/roboto/roboto-fontface.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/offline-theme-slide.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/offline-language-english.css"/>
+    <link rel="apple-touch-icon" href="/icon/152.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon/152.png"><!--touch-icon-ipad-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180.png"><!--touch-icon-iphone-retina-->
+    <link rel="apple-touch-icon" sizes="167x167" href="/icon/167.png"><!--touch-icon-ipad-retina-->
+    <link rel="apple-touch-startup-image" href="/launch.png">
+
+    <script src="/js/autolayout.min.js"></script>
+    <script src="/js/ejs.min.js"></script>
+    <script src="/js/offline.min.js"></script>
+    <script src="/js/fetch.js"></script>
+</head>
+<body oncontextmenu="return true;">
+    <div style="opacity:0; font-family:'FontAwesome'; position: absolute;">_</div>
+    <div style="opacity:0; font-family:'Roboto'; position: absolute;">_</div>
+    <div style="opacity:0; font-family:'Roboto-thin'; position: absolute;">_</div>
+    <div style="opacity:0; font-family:'Roboto-Light'; position: absolute;">_</div>
+    <div style="opacity:0; font-family:'Roboto-LightItalic'; position: absolute;">_</div>
+    <div id="loading-view">
+        <div class="byzance-page-center">
+            <div class="byzance-logo-spinner-white"></div>
+        </div>
+    </div>
+    <div id="views-holder"></div>
+</body>
+</html>

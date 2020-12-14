@@ -1,0 +1,25 @@
+{
+    "name": "The grid application",
+    "short_name": "The Grid",
+    "start_url": "index.html",
+    "display":"standalone",
+    "offline_enabled": true,
+    "icons": [{
+        "src": "/assets/icon/64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      }, {
+        "src": "/assets/icon/64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      }, {
+        "src": "/assets/icon/128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "/assets/icon/144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ]
+}

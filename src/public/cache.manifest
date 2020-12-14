@@ -1,0 +1,27 @@
+CACHE MANIFEST
+# v1.16
+
+CACHE:
+/index.html
+/css/style.css
+/css/offline-theme-slide.css
+/css/offline-language-english.css
+/js/autolayout.min.js
+/js/ejs.min.js
+/js/offline.min.js
+/js/fetch.js
+/js/app.js
+/css/logo_square_white.svg
+/sockjs-node/info?t=1487345729488
+/css/logo_white.svg
+/css/font-awesome.min.css
+/fonts/fontawesome-webfont.woff2?v=4.7.0
+/css/roboto/roboto-fontface.css
+/fonts/Roboto/Roboto-Regular.woff2
+/fonts/Roboto/Roboto-Thin.woff2
+/fonts/Roboto/Roboto-Light.woff2
+/fonts/Roboto/Roboto-LightItalic.woff2
+/manifest.json
+
+NETWORK:
+*
